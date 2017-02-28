@@ -2,4 +2,4 @@
 A chatbot that helps people declutter.
 
 ## participants
-Hongru Hou, Sanchit Gupta, Nanjiaxu Jiang
+Hongru Hou, Sanchit Gupta, Nanjiaxu Jiang.
