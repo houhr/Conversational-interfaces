@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Animated conversation agent</title>
+    <!--[if IE]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
+  </head>
+  <body>
+    <div id="canvasDiv"></div>
+
+    <!-- Search Form -->
+    <form id="labnol" method="get" action="https://www.google.com/search">
+      <div class="speech">
+        <table>
+          <tr>
+            <td>
+              <input type="text" name="q" id="transcript" placeholder="Speak" />
+            </td>
+            <td>
+              <img onclick="startDictation()" src="//i.imgur.com/cHidSVu.gif" />
+            </td>
+          </tr>
+        </table>
+      </div>
+    </form>
+
+
+    <script type="text/javascript" src="nonverbal.js"></script>
+    <script type="text/javascript" src="verbal.js"></script>
+    <script type="text/javascript">
+    	prepareCanvas(document.getElementById("canvasDiv"), 490, 220);
+		  document.getElementById("canvasDiv").onmousedown = function() {
+			 jump();
+      }
+    </script>
+  </body>
+</html>
